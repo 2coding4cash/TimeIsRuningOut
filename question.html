@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>逾时不候</title>
+
+    <!-- Custom Theme Style -->
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/question.css">
+
+    <script type="text/javascript" src="js/common/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/common/Global.js"></script>
+    <script type="text/javascript" src="js/common/LogicUtil.js"></script>
+    <script type="text/javascript" src="js/common/QuestionDataUtil.js"></script>
+    <!-- <script type="text/javascript" src="js/common/html2canvas.js"></script>
+    <script type="text/javascript" src="js/common/canvas2image.js"></script> -->
+
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/question.js"></script>
+</head>
+<body onload="question.onLoad()">
+    <div id="questionBg" class="questionBg">
+        <div class="clockArea">
+            <div class="clock_bg">
+                <img src="image/clockUp.png" class="clock_phone">
+                <div id="clockSreen" class="clock_out">
+                    <div class="clock_inBg">
+                        <div class="clock_secondLine"></div>
+                    </div>
+                    <div class="clock_inBg" style="padding: 16px 15px">
+                        <div class="clock_minLine"></div>
+                    </div>
+                    <div class="clockSreen"></div>
+                </div>
+            </div>
+        </div>
+        <img src="image/title_ch.png" class="chTitle"/>
+        <img src="image/title_en.png" class="enTitle"/>
+        <div id="textArea" class="textArea">
+            <div class="textArea_fxsn">佛系少年</div>
+            <div class="textArea_akbk">爱看不看</div>
+            <div class="textArea_smallText">地址：北京长楹天街五层连廊</div>
+            <div class="textArea_smallText">时间：2018年7月1日-10月1日</div>
+        </div>
+        <div class="questionArea">
+            <ul id="questionArea_list" class="questionArea_list">
+            </ul>
+        </div>
+        <div id="clickNoneArea" class="clickNoneArea"></div>
+    </div>
+</body>
+</html>

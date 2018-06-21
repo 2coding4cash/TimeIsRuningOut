@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>逾时不候</title>
+
+    <!-- Custom Theme Style -->
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/question.css">
+
+    <script type="text/javascript" src="js/common/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/common/QuestionDataUtil.js"></script>
+    <script type="text/javascript" src="js/common/html2canvas.min.js"></script>
+    <script type="text/javascript" src="js/common/canvas2image.js"></script>
+
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/result.js"></script>
+</head>
+<body id="picSave" onload="result.onLoad()">
+    <!-- <img src="image/result.png" style="width: 100%;height: 100%;float: left;"/> -->
+    <!-- <img id="copyImage" crossOrigin="anonymous" src="" style="width: 100%;height: 100%;float: left;"/> -->
+    <div class="result_Bg">
+        <div id="result_area" class="result_area">
+            <img id="result_image" class="resultBg_image" src="">
+            <div id="result_title" class="resultBg_text"></div>
+            <img id="result_canvasImg" src="image/resBg_7.png" class="result_canvasImg"/>
+            <div id="imageQRcode" class="qrcodeBg">
+                <div class="qrcodeArea">
+                    <img src="image/qrcode.png" class="qrcode_common">
+                    <div class="qrcodeText">长按识别二维码</div>
+                </div>
+            </div>
+            
+            <!-- <img src="image/qrcode.png" class=""style=""> -->
+        </div>
+        <div class="btnBg">
+            <div class="optionBtn">
+                <div class="savePhoto"></div>
+            </div>
+            <div class="optionBtn" onclick="result.repageToQuestion();">
+                <div class="reAnswer"></div>
+            </div>
+        </div>
+    </div>
+    <div id="loadingModal" class="loadingBg">
+        <img class="loading_football" src="image/football.png"/>
+    </div>
+</body>
+</html>
