@@ -130,7 +130,7 @@
 .textArea{
 	width: 66.5%;
 	float: right;
-	background-image: url("../image/touth.png");
+	/*background-image: url("../image/touth.png");*/
 	background-size: 100% 100%; 
 	padding: 0 20px;
 	box-sizing: border-box;
